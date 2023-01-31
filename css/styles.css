@@ -1,0 +1,234 @@
+:root {
+    font-size: 18px;
+    --black40: #3e3e3e;
+    --black30: #292525; 
+    --black20: #525050;
+    --black10: #616161;
+}
+
+body {
+    color: var(--black20);
+    /* font-family:'Roboto', sans-serif; */
+    /* background: #251f24; */
+    margin: 0;
+    margin-top: -100px;
+    margin-bottom: -15px;
+}
+
+a {
+    color: var(--gray40);
+}
+
+header {
+    
+}
+
+.header-content {
+    padding-inline: 20px;
+}
+
+.header {
+    margin-block-start: 20px;
+    /*--white10: red;*/
+    font-size: 14px;
+    /* color: var(--white); */
+    color: black;
+    /* top */
+    /* bottom */
+    /* inset-block-end: ; */
+    /* left */
+    /* right */
+    /* inset-inline-end: ; */
+}
+
+
+header li {
+    color: var(--white20);
+    margin-block-end: 16px;
+}
+
+header a {
+    color: var(--black40);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--black20);
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+    margin-block: 40px;
+    text-align: center;
+    }
+
+h2 {
+    font-size: 1.5em;
+    margin: 20px 0 30px;
+    font-weight: normal;
+    text-align: center;
+}
+
+blockquote {
+    color: var(--black20);
+    text-align: center;
+}
+
+blockquote ::before {
+    content: '';
+}
+
+main {
+     /* background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/fondo.pagina\ wos.jpg); */ 
+    /* border: 1px solid red;  */ 
+    font-family:'Quicksand', sans-serif;
+    background-image: linear-gradient(96.07deg, #f3f3ef 30.63%, #e7e6e2 102.18%);
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/imagen-fondo.jpg); 
+    block-size: 50px;
+    margin: 0;
+}
+
+.envoltura {
+    width: 950px;
+    /* width: 902px; */
+    margin: auto;
+}
+
+.main-content {
+    /* background: blue; */
+    width: auto;
+    background: white;
+    padding-inline: 16px;
+    text-align: center;
+}
+
+.wrapper {
+    max-inline-size: 902px;
+    margin: auto;
+}
+
+.debug {
+    box-shadow: 0px 0 0px 1px red;
+    outline: 1px solid red;
+    background: red;
+}
+
+blockquote {
+    font-size: 18px;
+    margin: 32px;
+    /* line-height: 24px; */
+    border-left: 4px solid purple;
+    border-right: 4px solid purple;
+}
+
+.contenido-1 {
+    margin-top: 40px;
+}
+
+.section-content ol li {
+    line-height: 20px;
+    font-family:'Roboto', sans-serif;
+}
+
+.section-content img {
+    margin-block-start: 40px;
+    /* margin-top: 30px; */
+    /* width: 50%; */
+    display: block;
+}
+
+/* .slider {
+    border: 1px solid red;
+} */
+
+.slider-container {
+    display: block;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+    align-content: center;
+}
+
+.video {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+    /* border: 1px solid yellow; */
+    text-align: center;
+    margin-block-start: 10px;
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: black;
+    border-radius: 50%;
+}
+
+.galeria {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.galeria img {
+    width: 100px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: .5s ease;
+}
+
+.galeria img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media screen and (min-width: 1366px) {
+    .hero {
+      block-size: 350px;
+      margin: 0;
+      margin-bottom: -100px;
+    }
+
+    .header {
+        position: sticky;
+        inset-block-start: -45px;
+      }
+      .header-content {
+        position: relative;
+        inset-block-start: 65px;
+        padding-inline: 0;
+      }
+      header {
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+      }
+      h1 {
+        font-size: 60px;
+        margin-block-start: 64px;
+      }
+}
